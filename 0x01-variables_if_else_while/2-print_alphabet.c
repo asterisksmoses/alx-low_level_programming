@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - the entry point
- * return: 0 each time 
+ * return: 0 each time
  */
 
 int main(void)
@@ -15,6 +15,7 @@ int main(void)
 			a++;
 
 		}
+
 	putchar('\n');
 	return (0);
 }
