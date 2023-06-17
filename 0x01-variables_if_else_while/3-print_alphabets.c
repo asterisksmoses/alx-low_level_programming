@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- * main - point of entry
- * return: 0 each time
+ * main : Entry point
+ * return: each time 0
  */
 
 int main(void)
@@ -12,17 +12,15 @@ int main(void)
 
 	c = 'a';
 	e = 'A';
-	while 
+	while
 		(c <= 'y') {
 			putchar (c);
 			c++;
 		}
-	while 
+	while
 		(e <= 'Y') {
 			putchar (e);
 			e++;
 		}
 	return (0);
 }
-
-	     
