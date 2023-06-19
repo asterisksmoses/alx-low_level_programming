@@ -1,9 +1,9 @@
 #include <stdio.h>
 /**
  * main - program that print various types on the computer
- * return 0 (Success)
+ * Return: 0 (Success)
  */
-int main (void)
+int main(void)
 {
 	char x;
 	int y;
