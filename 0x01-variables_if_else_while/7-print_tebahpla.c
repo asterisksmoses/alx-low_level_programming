@@ -3,7 +3,7 @@
 /**
  * main - prints lowercase alphabets in reverse
  * followed by a new line
- * Return - each time 0
+ * Return: each time 0
  */
 
 int main(void)
