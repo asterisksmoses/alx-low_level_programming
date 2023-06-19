@@ -3,7 +3,7 @@
 
 /**
  * main - print numbers starting from 0 to 9
- * Return - each time 0
+ * Return: each time 0
  */
 
 int main(void)
