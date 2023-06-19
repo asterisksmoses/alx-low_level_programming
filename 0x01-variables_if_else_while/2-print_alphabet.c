@@ -1,21 +1,19 @@
 #include <stdio.h>
+
 /**
- * main - the entry point
- * return: 0 each time
+ * main - print alphabets in lower case
+ * Return: every time come back to 0
  */
 
 int main(void)
 {
-	char a;
+	char alph[26] = "abcdefghijklmnopqrstuvwxyz";
+	int x;
 
-	a = 'c';
-	while
-		(a <= 'x') {
-			putchar(a);
-			a++;
-
-		}
-
+	for (x = 0; x < 26; x++)
+	{
+		putchar(alph[x]);
+	}
 	putchar('\n');
 	return (0);
 }
