@@ -9,14 +9,14 @@
 int main(void)
 {
 	int x = 0;
-	long y = 1, z = 2, sum = c;
+	long y = 1, c = 2, sum = c;
 
-	while (z + y < 4000000)
+	while (c + y < 4000000)
 	{
-	z += y;
-	if (z % 2 == 0)
-	sum += z;
-	y = z - y;
+	c += y;
+	if (c % 2 == 0)
+	sum += c;
+	y = c - y;
 	++x;
 	}
 	printf("%ld\n", sum);
