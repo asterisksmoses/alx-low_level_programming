@@ -5,7 +5,7 @@
  * @n: is the value to be computed
  */
 
-void print_times_table(int n);
+void times_table(void);
 {
 	int num, mult, prod;
 
