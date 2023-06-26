@@ -3,21 +3,22 @@
 /**
  * rev_string - a function that reversea a string
  * @s: string to be reversed
+ * Return: string in reverse
  */
 
 void rev_string(char *s)
 {
 	char rev = s[0];
 	int counter = 0;
-	int y;
+	int i;
 
 	while (s[counter] != '\0')
 	counter++
-	for (y = 0; y < counter; y++)
+	for (i = 0; i < counter; i++)
 		{
 			counter--;
-			rev = s[y];
-			s[y] = s[counter];
+			rev = s[i];
+			s[i] = s[counter];
 			s[counter] = rev;
 		}
 }
