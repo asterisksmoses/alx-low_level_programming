@@ -21,17 +21,30 @@ char *str_concat(char *s1, char *s2)
 	{
 		s2 = "";
 	}
-	c = 0;
-	sh = 0;
+	c = sh = 0;
+	while (s1[c] != '\0')
+	{
+		c++;
+	}
+	while (s2[sh] != '\0')
+	{
+		sh++;
+	}
+	xyz = malloc(sizeof(char) * (c + sh + 1));
 
-        while (s1[c] != '\0')
+	if (xyz == NULL)
+	{
+		return (NULL);
+	}
+	c = sh = 0;
+	while (s1[c] != '\0')
 	{
 		xyz[c] = s1[c];
 		c++;
 	}
 	while (s2[sh] != '\0')
 	{
-		xyz[sh] = s2[sh];
+		xyz[c] = s2[sh];
 		c++;
 		sh++;
 	}
