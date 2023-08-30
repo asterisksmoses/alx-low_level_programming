@@ -44,6 +44,7 @@ size_t looped_listint_length(const listint_t *head)
 		sam = sam->next;
 		cat = (cat->next)->next;
 	}
+
 	return (nodes);
 }
 
