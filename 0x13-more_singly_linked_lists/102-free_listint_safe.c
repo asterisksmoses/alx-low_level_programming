@@ -40,10 +40,40 @@ size_t looped_listint_length(const listint_t *head)
 			}
 			return (nodes);
 		}
+
 		sam = sam->next;
 		cat = (cat->next)->next;
 	}
 }
 
 /**
- *
+ * print_listint_safe - Function that prints a listint list safely
+ * @head: A pointer to the first node of the linked list
+ * Return: The number of nodes in the list
+ */
+
+size_t print_listint_safe(const listint_t *head)
+{
+	size_t nodes, indx = 0;
+
+	nodes = looped_listint_length(head);
+
+	if (nodes == 0)
+	{
+		for (; head != NULL; nodes++)
+		{
+			printf("[%p] %d\n", (void *)head, head->n);
+			head = head->next;
+		}
+	}
+	else
+	{
+		for (indx = 0; indx < nodes; indx++)
+		{
+			printf("[%p] %d\n", (void *)head, head->n);
+			head = head->next;
+		}
+		printf("-> [%p] %d\n", (void *)head, head->n);
+	}
+	return (nodes);
+}

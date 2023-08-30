@@ -8,7 +8,7 @@ size_t print_listint_safe(const listint_t *head);
  * looped_listint_length - Finds the number of nodes in
  * a looped listint_t
  * @head: A pointer to the first node of the linked list
- * Return:0 if the list is not looped otherwise the number of
+ * Return: 0 if the list is not looped otherwise the number of
  * nodes in the linked list
  */
 
