@@ -22,7 +22,7 @@ size_t looped_listint_length(const listint_t *head)
 	sam = head->next;
 	cat = (head->next)->next;
 
-	while (sam)
+	while (cat)
 	{
 		if (sam == cat)
 		{
