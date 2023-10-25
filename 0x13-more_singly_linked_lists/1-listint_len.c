@@ -10,13 +10,15 @@
 
 size_t listint_len(const listint_t *h)
 {
-	size_t xy;
+	size_t result;
 
-	while (h)
+	if (h == NULL)
 	{
-		xy++;
+		return (0);
+	}
+	for (result = 0; h != NULL; result++)
+	{
 		h = h->next;
 	}
-	return (xy);
+	return (result);
 }
-
