@@ -9,7 +9,11 @@
 
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int length, x, y, res, val;
+	unsigned int length;
+	size_t x;
+	size_t y;
+	size_t res;
+	size_t val;
 	int bs = 2;
 
 	res = 0;
@@ -22,7 +26,7 @@ unsigned int binary_to_uint(const char *b)
 	for (length = 0; b[length] != '\0'; length++)
 		;
 	if (length == 1 && (b[0] == '0' || b[0] == '1'))
-			return (b[0] - 48);
+		return (b[0] - 48);
 
 	for (x = 0; b[x] != '\0'; x++)
 	{
@@ -36,7 +40,3 @@ unsigned int binary_to_uint(const char *b)
 	}
 	return (res);
 }
-
-
-
-
