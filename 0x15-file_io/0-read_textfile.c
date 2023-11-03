@@ -35,7 +35,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (_read == -1)
 	{
 		free(buffer);
-		close(fx);
+		close(xy);
 		return (0);
 	}
 
@@ -43,9 +43,9 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (_write == -1)
 	{
 		free(buffer);
-		close(fx);
+		close(xy);
 		return (0);
 	}
-	close(fx);
+	close(xy);
 	return (_read);
 }
