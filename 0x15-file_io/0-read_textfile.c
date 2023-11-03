@@ -1,6 +1,5 @@
 #include "main.h"
-#include <stdio.h>
-#include <stddef.h>
+#include <stdlib.h>
 
 /**
  * read_textfile - Function that reads a texte file and prints it
@@ -10,7 +9,7 @@
  * Return: The number of letters it could read.
  */
 
-ssize_t read_textfile(const char *filename, size_t letters);
+ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int xy;
 
