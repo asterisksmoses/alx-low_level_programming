@@ -24,6 +24,7 @@ list_t *add_node(list_t **head, const char *str)
 	if (nodex->str == NULL)
 	{
 		return (NULL);
+		free(nodex);
 	}
 	nodex->len = strlen(str);
 	nodex->next = *head;
