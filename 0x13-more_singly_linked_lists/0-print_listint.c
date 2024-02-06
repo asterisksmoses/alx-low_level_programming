@@ -16,6 +16,7 @@ size_t print_listint(const listint_t *h)
 	if (h == NULL)
 	{
 		printf("Linked list is empty.\n");
+		return (0);
 	}
 
 	while (current != NULL)
