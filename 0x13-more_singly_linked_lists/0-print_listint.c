@@ -10,8 +10,13 @@
 
 size_t print_listint(const listint_t *h)
 {
-	const listint_t *current = h;
 	size_t x = 0;
+	const listint_t *current = h;
+
+	if (h == NULL)
+	{
+		printf("Linked list is empty.\n");
+	}
 
 	while (current != NULL)
 	{
