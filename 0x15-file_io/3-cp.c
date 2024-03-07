@@ -6,11 +6,25 @@
 
 #define BUFFER_SIZE 1024
 
+/**
+ * error_exit - Function that exits when an error is encountered
+ * @code: Input value
+ * @xyz: Input value
+ * @x: Input Value
+ */
+
 void error_exit(int code, const char *xyz, int x)
 {
 	dprintf(STDERR_FILENO, "%s%d\n", xyz, x);
 	exit(code);
 }
+
+/**
+ * main - Entry point of the program
+ * @argc: The number of arguments
+ * @argv: The argument vector
+ * Return: 0 upon success
+ */
 
 int main(int argc, char *argv[])
 {
