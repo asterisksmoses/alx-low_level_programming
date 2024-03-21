@@ -1,26 +1,28 @@
-#include "main.h"
+#include <stdlib.h>
+#include <string.h>
 #include <stdio.h>
+#include "lists.h"
 
 /**
  * main - check the code
  *
- * Return: Always 0.
+ * Return: Always EXIT_SUCCESS.
  */
 int main(void)
 {
-    int r;
+    dlistint_t *head;
 
-    r = _pow_recursion(1, 10);
-    printf("%d\n", r);
-    r = _pow_recursion(1024, 0);
-    printf("%d\n", r);
-    r = _pow_recursion(2, 16);
-    printf("%d\n", r);
-    r = _pow_recursion(5, 2);
-    printf("%d\n", r);
-    r = _pow_recursion(5, -2);
-    printf("%d\n", r);
-    r = _pow_recursion(-5, 3);
-    printf("%d\n", r);
-    return (0);
+    head = NULL;
+    add_dnodeint_end(&head, 0);
+    add_dnodeint_end(&head, 1);
+    add_dnodeint_end(&head, 2);
+    add_dnodeint_end(&head, 3);
+    add_dnodeint_end(&head, 4);
+    add_dnodeint_end(&head, 98);
+    add_dnodeint_end(&head, 402);
+    add_dnodeint_end(&head, 1024);
+    print_dlistint(head);
+    free_dlistint(head);
+    head = NULL;
+    return (EXIT_SUCCESS);
 }

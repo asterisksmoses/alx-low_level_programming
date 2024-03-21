@@ -1,16 +1,26 @@
-#include "main.h"
+#include <stdlib.h>
+#include <string.h>
 #include <stdio.h>
+#include "lists.h"
 
 /**
  * main - check the code
  *
- * Return: Always 0.
+ * Return: Always EXIT_SUCCESS.
  */
 int main(void)
 {
-    int n;
+    dlistint_t *head;
 
-    n = _strlen_recursion("Corbin Coleman");
-    printf("%d\n", n);
-    return (0);
+    head = NULL;
+    add_dnodeint(&head, 0);
+    add_dnodeint(&head, 1);
+    add_dnodeint(&head, 2);
+    add_dnodeint(&head, 3);
+    add_dnodeint(&head, 4);
+    add_dnodeint(&head, 98);
+    add_dnodeint(&head, 402);
+    add_dnodeint(&head, 1024);
+    print_dlistint(head);
+    return (EXIT_SUCCESS);
 }
