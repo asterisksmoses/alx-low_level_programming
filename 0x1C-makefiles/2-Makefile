@@ -2,7 +2,7 @@
 # A number of variables to be implemented
 
 CC = gcc
-SRC = main.o school.o
+SRC = main.c school.c
 OBJ = ${SRC:%.c=%.o}
 NAME = school
 
